@@ -8,24 +8,28 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <section class="style-el">
+        <button onclick="topFunction()" id="myBtnid" title="Go to top">Top</button>
+        <div></div>
     <div class="empty-div"></div>
     <div class="navbar">
         <div class="flex">
             <h1 class="logo">Stephanie Okolie</h1>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#aboutt">About</a></li>
+                <li><a href="#home"><span class="icon solid fa-home">Home</span></a></li>
+                <li><a href="#aboutt" id="b">About</a></li>
                 <li><a href="#resumee">Resume</a></li>
                 <li><a href="#links">Links</a></li>
-              </ul>
-              
+              </ul>   
         </div>
     </div>
+    </section>
+    
     <div class="sec-div">
-        <div class="overflow">
+        <div class="overflow"> 
+            <div class="style-el"></div>  
         <div class="img-div" id="home">
-            <img src="img.png" alt="" width="700" height="600">
-            
+            <img src="img.png" alt="" width="700" height="600" class="img-class">  
             <div class="pdiv" id="aboutt">
         <p class="p-class">Hi, I’m,</p>
         <h2 class="p-class">Stephanie<br>
@@ -34,7 +38,7 @@
          <span class="p-class" style="font-size: 20px; color:#505050;">Software Developer</span>
         </div>
         <div class="button-class">
-            <button class="view-portfolio"><a href="#resumee">View Portfolio</a></button>
+         <button class="view-portfolio"><a href="#resumee">View Portfolio</a></button>
         </div>
         <div class="about">
            <h2>About</h2>
@@ -46,7 +50,7 @@
 </div>
         <div class="div-percentd">
             <div class="grid-div">
-        <p>Development<span class="p-span">80%</span></p>
+        <p>Coding<span class="p-span">80%</span></p>
         <div class="a-div"></div>
         </div>
             <div class="grid-div">
@@ -54,27 +58,58 @@
             <div  class="ab-div"> </div>
             </div>
         </div>
+        <div class="skills">
+            <h2>Skills</h2>
+            <p>Skills, Languages & Coding Framework</p>
+        <div class="skilset">
+            <div class="lang-el" style="border-right: 1px solid black;"> 
+            <p style="font-weight: bolder; color: #757575;">Coding Languages</p>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>Javascript</p>
+            <p>React</p>
+            <p>Sass</p>
+            <p>Jquery</p>
+        </div>
+            <div class="soft-skil">
+           <p style="font-weight: bolder; color: #757575;">Soft Skills</p>
+           <ul>
+           <li>Teamwork</li> 
+           <li>The ability to learn concepts and apply them fast to other problems</li>
+           <li>Passion for problem solving</li>
+        <li> Time management</li>
+        <li>Good communication and writing skills</li>
+        <li>Collaborative problem solving</li>
+    </ul>
+</div>
+<div class="framework-el" style="margin-left: 10px;">
+    <p style="font-weight: bolder; color: #757575;">Frameworks</p>
+<p>Visual Studio,</p>
+<p>Bootstrap</p>
+</div>
+</div>
+        </div>
         <div class="resume" id="resumee">
             <h2>Resume</h2>
-            <p>Education & Experiences</p>
+            <p style="margin-left: 40px;">Education & Experiences</p>
             <div class="grid-container">
                 <div class="grid-item">
-                    <span>2012 to 2018</span>
-                    <p>St. Mary's Comprehensive Secondary School
-                        SSCE </p>
+                    <p style="font-weight: bolder;">Education</p>
+                    <span>SSCE - 2012 to 2018</span>
+                    <p>St. Mary's Comprehensive Secondary School</p>
                 </div>
                 <div class="grid-item">
-                    <span>...</span>
-                    <p>Software Developer<br>
-                        I design and create software solutions to solve pain points.</p>
+                    <p style="font-weight: bolder;">Software Developer<p>
+                        <span>October 2020 to present</span>
+                       <p>I started coding</p>
                 </div>
                 <div class="grid-item">
                     <span>2020 to present</span>
                     <p>Online program on freeCodeCamp</p>
                 </div>
                 <div class="grid-item">
-                    <span>October 2020 to present</span>
-                    <p>I started coding</p>
+                    <span></span>
+                    <p>I design and create software solutions to solve pain points.</p>
                 </div>
               </div>
               </div>
@@ -100,28 +135,54 @@
                       <p>CHATTING</p>
                 </div>
                   </div>
+                  <div class="course-el">
+                    <h2>Portfolio</h2>
+                    <p>Skilled & Experienceed</p>
+                      <div class="all-el">
+                          <div class="all-div">
+                            <h4 class="all-project">Course project</h4>
+                            <div id="image-el">
+
+                            </div>
+                          </div>
+                          <div class="course-div">
+                            <h4 class="course-project">Course project</h4>
+                            <a href="https://codepen.io/stephanieokolie/details/KKMxezV">A Tribute Page</a>
+                            <p><a href="https://codepen.io/stephanieokolie/details/abZPEKe"target="_self">A Survey form</a></p>
+                            <span id="dots">...</span><span id="more"><a href="https://codepen.io/stephanieokolie/pen/YzWgXqW">A Product Landing Page</a><br>
+                                <a href="https://codepen.io/stephanieokolie/full/PozroOE"><img src="images/A Product Landing Pageimg.jpg" alt="" width="100" height="100"></a><br>
+                                <a href="https://codepen.io/stephanieokolie/details/xxOvRpJ">A Personal Portfolio</a></p></span></p>
+                             <button onclick="myFunction()" id="myBtn">View more</button>
+                          </div>
+                         
+                          <div class="cloned">
+                        <h4>Cloned projects</h4>
+                        <p><a href="https://codepen.io/stephanieokolie/full/OJmyWxW">CSS Workdesk</a></p>
+                        <p><a href="https://codepen.io/stephanieokolie/full/eYWbWZo">Netflix clone</a></p>
+                        <p><a href="https://codepen.io/stephanieokolie/full/dyWYMmQ">Piggyvest clone</a></p>
+                        <p><a href="https://github.com/Chinemereem/twitterclone">Twitter clone</a></p>
+                        <p><a href="">Email Clone</a></p>
+                        
+                        </div>
+                         <a href="#">Designed Projects</a>
+                      </div>
+                  </div>
               </div>
-            <div class="flex-all-div" id="links">
-                <h3>Check Out These Important links</h3>
-            <div class="link-flex">
-            <div class="link1">
-                <a href="https://internship.zuri.team/">
-                  <img src="zuri-image.png" alt="" width="100" height="100"></a>
-            </div>
-            <div class="link2">
-                <a href="https://hng.tech/">
-                    <img src="brand-logo.png" alt="" width="100" height="100"></a>
-            </div>
-            <div class="link3">
-                <a href="https://ingressive.org/">
-                    <img src="I4G-Logo-Color-Cropped.png" alt="" width="100" height="100"></a>
-            </div>
-        </div>
+             
+              <div class="form-div">
+                  <form action="">
+                      <input type="text">
+                  </form>
+              </div>
             </div>
         </div>
         </div>
         </div>
     </div>
-    </div>
+    </div>  
+    </section>
 </body>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="index.js"></script>
+    
 </html>

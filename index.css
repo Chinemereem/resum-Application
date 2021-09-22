@@ -1,7 +1,12 @@
+@import url("fontawesome-all.min.css");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
 *{
     box-sizing: border-box;
     margin: 0%;
     padding: 0;
+}
+html {
+  scroll-behavior: smooth;
 }
 a{
     text-decoration: none;
@@ -17,8 +22,29 @@ html{
 }
 
 body{ 
-    overflow:hidden;
+    overflow-x:hidden;
     height:100%;
+    
+}
+#myBtnid {
+  display: none;
+  position: fixed;
+  bottom: 80px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgb(214, 48, 112);;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  overflow: none;
+}
+
+#myBtnid:hover {
+  background-color: rgb(243, 147, 184);
 }
 
 .empty-div{
@@ -26,8 +52,8 @@ body{
     height: 500vh;
     background: #021627;
     position: fixed;
-    top: 0;
-    border-right: 10px solid #283847;
+    top: -30px;
+    border-right: 1px solid #283847;
 }
 .logo{
      padding: 10px;
@@ -38,11 +64,11 @@ body{
         position: fixed;
         left: 150px;
         top: 0;
-        width: 25%;
+        width: 30%;
         height: 100%;
        z-index: 2;
     }
-    ul {
+    .navbar ul {
         list-style-type: none;
         margin-top: 200px;
         background-color: #021627;
@@ -50,15 +76,17 @@ body{
        margin-left: 10px;
       }
       
-      li a {
+      .navbar li a {
         display: block;
         margin-top: 15px;
+        display: inline-block;
       }
     
-    .navbar a:hover{
+    /* .navbar a:hover{
+      padding: 10px;
       color:#5F7281;
       background-color:  rgba(128, 128, 128, 0.5);
-    }
+    } */
     /* MY PHOTO */
     
     .sec-div{
@@ -66,21 +94,31 @@ body{
     height: 100%;
     
     }
+    .style-el{
+      
+      
+    }
     .overflow{
- background-color: #334452;
-  height: 90%;
-  width: 100%;
-  overflow-y: auto;
+   background-color: #334452;
+   height: 90%;
+   width: 100%;
+   overflow-y: auto;
    position:relative;
    top:30px;
-   left:40%
+   left:40%;
+   
+  
+   
     }
     .img-div img{
      margin-left: 120px;
-     margin-top: 10px;
      border-radius: 5px;
      width: 70%;
      height: auto;
+    }
+    .img-classs{
+      height: 83vh;
+      
     }
     .img-div{
         background-color: #fff;
@@ -89,8 +127,7 @@ body{
            margin-top:10px
        }
     .pdiv{ 
-    position: relative;
-    top: -420px;
+    
     position: relative;
     top: -420px;
     left: 40px;
@@ -103,10 +140,12 @@ body{
     .span-class{
         border-bottom: 2px solid #3657e8;
        position: relative;
+       top: -457px;
+       left: 40px;
        width: 50px;
        height: 20px;
-       top: -557px;
-       left: 40px;
+       
+       z-index: 2;
     }
     .view-portfolio{
         position: relative;
@@ -187,9 +226,29 @@ body{
     .p-80{
         float: right;
     }
+    /* Skills */
+    .skills{
+      margin-left: 40px;  
+      padding: 10px;
+      box-shadow: 0 8px 10px 0 rgba(235, 231, 231, 0.2);;
+   transition: 0.3s;
+    }
+    .skills:hover{
+      font-size: large;
+   }
+    .skilset{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+       
+    }
+    
+    .soft-skil{
+      margin-left: 25px;
+      border-right: 1px solid black;
+    }
     /* grid */
     .resume  p{
-        margin-left: 40px;
         margin-top: 10px;
     }
     .resume  h2{
@@ -224,9 +283,9 @@ body{
         border-bottom: 1px solid #EAEAEA;
       }
       .grid-item-hobbies {
-        background-color: #E84536;
-        border-left: 1px solid rgba(0, 0, 0, 0.8);
-        border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+        background-color: rgb(214, 48, 112);;
+        border-left: 1px solid rgb(211, 125, 158);
+        border-bottom: 1px solid rgb(211, 125, 158);
         padding: 20px;
         font-size: 20px;
         text-align: center;
@@ -242,8 +301,26 @@ body{
       .link3 img{
        width: 150px;
       }
-      
-
+      .course-el{
+        margin-left: 40px;
+      }
+      .all-el{
+        display: flex;
+        justify-content: space-between;
+       
+        
+      }
+      .course-div{
+        margin: 0%;
+      }
+      #more {display: none;}
+      .active{
+        background-color: red;
+      }
+      ::-webkit-scrollbar {
+        width: 0px;
+        height: 0px;
+        }
       @media screen and (max-width: 1020px) {
         
         .empty-div{
@@ -261,14 +338,14 @@ body{
             border-bottom: 1px solid #2B4458;
              text-align: center;
             }
-        ul {
+            .navbar ul {
             list-style-type: none;
             margin:0px;
             
            
           }
           
-          li a {
+          .navbar li a {
             display: block;
             text-decoration: none;
             color: white;
@@ -312,9 +389,9 @@ body{
       .div-percentd{
         grid-template-columns: auto ;
       }
-    .link3 img{
-        width: 150px;
-       }
+      .hobbie-p p{
+       margin-top: 10px;
+    }
 } 
       
 
